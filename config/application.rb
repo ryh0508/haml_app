@@ -10,7 +10,6 @@ module HamlApp
   class Application < Rails::Application
     config.generators do |g|
         g.template_engine :haml
-        g.stylesheet_engine = :sass
     end
 
     config.sass.preferred_syntax = :sass

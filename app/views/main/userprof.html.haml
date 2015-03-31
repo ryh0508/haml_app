@@ -1,0 +1,101 @@
+= render partial: "header"
+
+.morikazuprofile
+  .morikazutop
+    .morikazupic.inline-block
+      %img{:src => "assets/morikazu.png", :style => "border-radius:50%; width:200px;"}
+    .morikazuexpla.inline-block
+      .morikazuname
+        田中一郎
+      .morikazuarima
+        一番思い出に残っているレースは2009年の
+        %br
+          有馬記念です。競馬歴は5年。よく中京競馬場
+          %br
+            に観戦に行きます。
+  .umaranking
+    .umarankingicon.inline-block
+      好きな馬ベスト3
+    .umarankingcontent.inline-block
+      1.タップダンス 2.ヒシアマゾン 3.ライスシャワー
+  .jockeyranking
+    .jockeyrankingicon.inline-block
+      好きな馬ベスト3
+    .jockeyrankingcontent.inline-block
+      1.四位洋文 2.南井克巳 3.オリビエ・ペリエ
+  .tanakastory
+    田中一郎の競馬物語
+  .storyoftanaka
+    .inline-block
+      %img{:src => "assets/hisi.jpg", :style => "height: 280px;"}
+    .hisistorybk.inline-block
+      .hisistory
+        女傑・ヒシアマゾン
+        %br
+          闘いに明け暮れた日々
+      .hisicontent
+        闘いに明け暮れた日々は終わった。
+        %br
+          有馬記念の熱狂のあとには、一瞬の静寂が訪れる。大観衆の眼差しは、
+          %br
+            圧勝を演じたサクラローレルに注がれていた。
+            %br
+              ヒーローの影に隠れた誇り高き敗者...
+              %br
+                （続きを読む）
+  .storyoftanaka2
+    .inline-block
+      %img{:src => "assets/brubon.jpg", :style => "height: 280px; width: 348px;"}
+    .hisistorybk.inline-block
+      .hisistory
+        ミホノブルボンには惜敗
+        %br
+          それでも見せた意地
+      .hisicontent
+        闘いに明け暮れた日々は終わった。
+        %br
+          有馬記念の熱狂のあとには、一瞬の静寂が訪れる。大観衆の眼差しは、
+          %br
+            圧勝を演じたサクラローレルに注がれていた。
+            %br
+              ヒーローの影に隠れた誇り高き敗者...
+              %br
+                （続きを読む）
+  .storyoftanaka2
+    .inline-block
+      %img{:src => "assets/tapcity.jpg", :style => "height: 280px; width: 348px;"}
+    .hisistorybk.inline-block
+      .hisistory
+        大器晩成のお手本
+        %br
+          タップダンスシチーの生涯
+      .hisicontent
+        闘いに明け暮れた日々は終わった。
+        %br
+          有馬記念の熱狂のあとには、一瞬の静寂が訪れる。大観衆の眼差しは、
+          %br
+            圧勝を演じたサクラローレルに注がれていた。
+            %br
+              ヒーローの影に隠れた誇り高き敗者...
+              %br
+                （続きを読む）
+    %nav{:style => "text-align:center; padding-top:30px"}
+      %ul.pagination{:width => "100%"}
+        %li
+          %a{"aria-label" => "Previous", :href => "#"}
+            %span{"aria-hidden" => "true"} &laquo;
+        %li
+          %a{:href => "#"} 1
+        %li
+          %a{:href => "#"} 2
+        %li
+          %a{:href => "#"} 3
+        %li
+          %a{:href => "#"} 4
+        %li
+          %a{:href => "#"} 5
+        %li
+          %a{"aria-label" => "Next", :href => "#"}
+            %span{"aria-hidden" => "true"} &raquo;
+
+= render partial: "footer"

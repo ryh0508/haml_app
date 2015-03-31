@@ -1,0 +1,70 @@
+= render partial: "header"
+
+%div
+  %div{:style => "padding-top:85px"}
+    #letsshare.col-md-6
+      あなただけの
+      %br
+        物語をシェアしましょう
+    .col-md-6{:style => "padding-top:50px"}
+      %p
+        %button.btn.btn-primary.btn-lg{:type => "button"} 下書き保存
+.clear
+.writesection
+  %p{:style => "font-size:20px; color:rgb(156,156,156)"}
+    %br
+      タグを追加
+.btnposi
+  %span.input-group-btn
+    %button.btn.btn-warning{:type => "button"} 保存
+.writesection
+  %p{:style => "font-size:20px; color:rgb(156,156,156)"}
+    %br
+      タイトルを追加
+.btnposi
+  %span.input-group-btn
+    %button.btn.btn-warning{:type => "button"} 保存
+.writesection2
+  %p{:style => "font-size:20px; color:rgb(156,156,156)"}
+    %br
+      %br
+        %br
+          物語のダイジェストを
+          %br
+            リード文にまとめてみましょう
+.btnposi
+  %span.input-group-btn
+    %button.btn.btn-warning{:type => "button"} 保存
+.putanime
+  .col-md-3.putanimebox
+    .tsuika
+      ＋
+    .tsuikaexpla
+      テクストを
+      %br
+        追加する
+  .col-md-3.putanimebox
+    .tsuika
+      ＋
+    .tsuikaexpla
+      写真を
+      %br
+        追加する
+  .col-md-3.putanimebox
+    .tsuika
+      ＋
+    .tsuikaexpla
+      動画を
+      %br
+        追加する
+  .col-md-3.putanimebox
+    .tsuika
+      ＋
+    .tsuikaexpla
+      ブロックを
+      %br
+        追加する
+.clear
+.writingexample
+
+= render partial: "footer"

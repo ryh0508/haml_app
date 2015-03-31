@@ -1,0 +1,102 @@
+= render partial: "header"
+
+%div{:style => "padding-top: 80px;"}
+.userboxp
+  %img.withinprofbox{:src => "assets/ryoh.jpg"}
+    .withinprofbox2
+      リョー
+.allfav
+  お気に入り一覧
+.clear
+.resultcontent
+  .inline-block
+    %img{:src => "assets/hisi.jpg", :style => "height: 280px; width: 348px;"}
+  .hisistorybk.inline-block
+    .hisistory
+      女傑・ヒシアマゾン
+      %br
+        闘いに明け暮れた日々
+    .hisicontent
+      闘いに明け暮れた日々は終わった。
+      %br
+        有馬記念の熱狂のあとには、一瞬の静寂が訪れる。大観衆の眼差しは、
+        %br
+          圧勝を演じたサクラローレルに注がれていた。
+          %br
+            ヒーローの影に隠れた誇り高き敗者...
+            %br
+              （続きを読む）
+  .hisiblock
+    .inline-block
+      %img{:src => "assets/karston.jpg", :style => "height: 280px; width: 348px;"}
+    .hisistorybk.inline-block
+      .hisistory
+        アイビスSDといえば、
+        %br
+          カルストンライトオ
+      .hisicontent
+        闘いに明け暮れた日々は終わった。
+        %br
+          有馬記念の熱狂のあとには、一瞬の静寂が訪れる。大観衆の眼差しは、
+          %br
+            圧勝を演じたサクラローレルに注がれていた。
+            %br
+              ヒーローの影に隠れた誇り高き敗者...
+              %br
+                （続きを読む）
+  .hisiblock
+    .inline-block
+      %img{:src => "assets/brubon.jpg", :style => "height: 280px; width: 348px;"}
+    .hisistorybk.inline-block
+      .hisistory
+        ミホノブルボンには惜敗
+        %br
+          それでも見せた意地
+      .hisicontent
+        闘いに明け暮れた日々は終わった。
+        %br
+          有馬記念の熱狂のあとには、一瞬の静寂が訪れる。大観衆の眼差しは、
+          %br
+            圧勝を演じたサクラローレルに注がれていた。
+            %br
+              ヒーローの影に隠れた誇り高き敗者...
+              %br
+                （続きを読む）
+  .hisiblock
+    .inline-block
+      %img{:src => "assets/tapcity.jpg", :style => "height: 280px; width: 348px;"}
+    .hisistorybk.inline-block
+      .hisistory
+        大器晩成のお手本
+        %br
+          タップダンスシチーの生涯
+      .hisicontent
+        闘いに明け暮れた日々は終わった。
+        %br
+          有馬記念の熱狂のあとには、一瞬の静寂が訪れる。大観衆の眼差しは、
+          %br
+            圧勝を演じたサクラローレルに注がれていた。
+            %br
+              ヒーローの影に隠れた誇り高き敗者...
+              %br
+                （続きを読む）
+  %nav{:style => "text-align:center; padding-top:30px"}
+    %ul.pagination{:width => "100%"}
+      %li
+        %a{"aria-label" => "Previous", :href => "#"}
+          %span{"aria-hidden" => "true"} &laquo;
+      %li
+        %a{:href => "#"} 1
+      %li
+        %a{:href => "#"} 2
+      %li
+        %a{:href => "#"} 3
+      %li
+        %a{:href => "#"} 4
+      %li
+        %a{:href => "#"} 5
+      %li
+        %a{"aria-label" => "Next", :href => "#"}
+          %span{"aria-hidden" => "true"} &raquo;
+
+= render partial: "footer"

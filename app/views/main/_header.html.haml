@@ -1,0 +1,24 @@
+/ここはヘッダーです
+
+%nav#header
+  %ul.content
+    .float-left
+      = link_to mainpage_path do
+        %img.servicetitle.inline-block.middle{:src => "assets/mainlogo.jpg"}
+      .clear
+    .float-right
+      %li
+        %a{:href =>""}
+          %i.fa.fa-caret-down.inline-block.middle
+      %li
+        = link_to signin_path do
+          ログイン
+      %li
+        = link_to signup_path do
+          アカウント作成
+      %li{:style => "color:white;background-color:rgb(125,19,81)"}
+        = link_to createpage_path, style: "color: white;" do
+          ストーリーを書く
+      .clear
+
+/ここまでがヘッダーです

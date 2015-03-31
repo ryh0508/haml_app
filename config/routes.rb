@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
-  get 'index' , to: "main#index"
-  get 'show' , to: "main#show"
-
-  get 'articles/index' , to: "articles#index"
-  get 'articles/show' , to: "articles#show"
+  get 'mainpage', to: 'main#mainpage'
+  get 'contentdetail' , to: 'main#contentdetail'
+  get '_header' , to: 'main#header'
+  get 'pagedetail' , to: 'main#pagedetail'
+  get 'createpage' , to: 'main#createpage'
+  get 'signup' , to: 'main#signup'
+  get 'signin' , to: 'main#signin'
+  get 'userprof', to: 'main#userprof'
+  get 'searchresult', to: 'main#searchresult'
+  get 'fav', to: 'main#fav'
+  get 'fav2', to: 'main#fav2'
 
   root to: "main#index"
 

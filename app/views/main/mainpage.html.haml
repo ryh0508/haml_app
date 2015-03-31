@@ -1,0 +1,108 @@
+/メインページです
+= render partial: "header"
+
+#main
+  .top.table
+    #concept
+      %p#conceptdetail
+        時代を彩った名馬たち
+        %br
+        戦績は残せなかったものの、
+        %br
+        思い入れ深い愛馬。
+        %br
+        競走馬の数だけ、
+        %br
+        そこには物語がある。
+        %br
+        戦績だけでは語りきれない
+        %br
+        あなただけの
+        %br
+        物語をシェアしましょう
+  #main2
+    %h1{:style => "text-align:center;font-family:HiraMinProN-W6;font-size:35px;"} すべての馬には物語がある
+    .search-content
+      .input-group
+        %input.form-control{:placeholder => "馬名・ユーザー名・キーワード", :type => "text"}
+        %span.input-group-btn
+          %button.btn.btn-success{:type => "button"} 物語を探す
+    .posts
+      .row
+        .col-md-6
+          .img-back.suzuka
+            .white-back
+              .post-content
+              %a{:href => "index2.html"}
+                %h3.title 影さえも踏ませなかったサイレンススズカ
+                %a{:href => "index2.html"}
+                .text
+                  %p あああああああああああああああああああああああああああああああああああああああああああああああああ
+                %img#prof1{:src => "assets/prof1.jpg"}
+                %span#namehr Ryoh Hasegawa
+                %img#book1{:src => "assets/book1.jpg"}
+                %span{:style => "font-size:40px;font-weight:bold;position:absolute;top:230px;left:235px"} 18
+                %a{:href => "index8.html"}
+                  %img#star1{:src => "assets/star1.jpg"}/
+                %span{:style => "font-size:40px;font-weight:bold;position:absolute;top:230px;left:350px"} 22
+        .col-md-6
+          .img-back.oguri
+            .white-back
+        .row
+          .col-md-4
+            .img-back.orfe
+              .white-back
+          .col-md-4
+            .img-back.kinkame
+              .white-back
+          .col-md-4
+            .img-back.staygold
+              .white-back
+      .row
+        .col-lg-6
+          .img-back.sinkuri
+            .white-back
+              .post-back
+                %3.title 影さえも踏ませなかったサイレンススズカ
+                .text
+                  %p あああああああああああああああああああああああああああああああああああああああああああああああああ
+                %img#prof1{:src => "assets/prof1.jpg"}
+                %span#namehr Ryoh Hasegawa
+                %img#book1{:src => "assets/book1.jpg"}
+                %span{:style => "font-size:40px;font-weight:bold;position:absolute;top:230px;left:235px"} 18
+                %img#star1{:src => "assets/star1.jpg"}
+                %span{:style => "font-size:40px;font-weight:bold;position:absolute;top:230px;left:350px"} 22
+        .col-lg-6
+          .img-back.yukichan
+            .white-back
+      .row
+        .col-md-4
+          .img-back.mayano
+            .white-back
+        .col-md-4
+          .img-back.durandal
+            .white-back
+        .col-md-4
+          .img-back.dscarlett
+            .white-back
+    .pagenation-content
+      %nav
+        %ul.pagination{:width => "100%"}
+          %li
+            %a{"aria-label" => "Previous", :href => "#"}
+              %span{"aria-hidden" => "true"} &laquo;
+          %li
+            %a{:href => "#"} 1
+          %li
+            %a{:href => "#"} 2
+          %li
+            %a{:href => "#"} 3
+          %li
+            %a{:href => "#"} 4
+          %li
+            %a{:href => "#"} 5
+          %li
+            %a{"aria-label" => "Next", :href => "#"}
+              %span{"aria-hidden" => "true"} &raquo;
+
+= render partial: "footer"

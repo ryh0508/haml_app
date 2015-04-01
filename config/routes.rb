@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'fav', to: 'main#fav'
   get 'fav2', to: 'main#fav2'
 
-  root to: "main#index"
+  root to: "main#mainpage"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'searchresult', to: 'main#searchresult'
   get 'fav', to: 'main#fav'
   get 'fav2', to: 'main#fav2'
+  resources :boards
 
   root to: "main#mainpage"
 

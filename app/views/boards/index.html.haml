@@ -1,0 +1,7 @@
+= render partial: "header2"
+%div#deep
+  %div#newslead
+    = link_to "新しい物語をつくる", new_board_path
+  - @boards.each do |board|
+    = link_to board.title, board_path(board)
+= render partial: "footer2"

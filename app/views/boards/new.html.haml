@@ -1,0 +1,13 @@
+%dv#bod
+  = link_to "「物語」一覧に戻る", boards_path
+  %hr
+  = form_for :board, url: boards_path, method: :post do |f|
+    タイトル　　　:
+    = f.text_field :title
+    %br
+    ストーリー内容:
+    = f.text_field :editor
+    %br
+    = f.file_field :image
+    = f.submit '保存'
+= render partial: "footer2"
